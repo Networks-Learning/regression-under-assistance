@@ -71,7 +71,7 @@ Synthetic datasets : `['sigmoid', 'gauss', 'Usigmoid', 'Ugauss', 'Wsigmoid', 'Wg
 and then train and test to see the new results.
 
 
-####Change the human error for the real datasets:
+#### Change the human error for the real datasets:
 Currently we use Dirichlet prior to generate human error for the image datasets as mentioned in the paper. **There is no need to run this script if you want to use the same human error**, but, if you wish to change it or try other methods you may modify `generate_human_error.py` script and then run:
 
 `python generate_human_error.py [name of image datasets]`
