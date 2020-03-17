@@ -34,7 +34,7 @@ This code depends on the following packages:
 
 ## Execution
 
-####Run the algorithms:
+#### Run the algorithms:
 `python train.py [name of datasets that you wish to train]`
 
 for example: `python train.py messidor sigmoid Ugauss`
@@ -49,7 +49,7 @@ All the default parameters are set based on the paper. You can change them in th
 
 The results will be saved in `/Results` folder. The results corresponding to all datasets are already generated and saved in `/Results`.
 
-####Test and generate the figures:
+#### Test and generate the figures:
 `python test.py [name of datasets that you wish to test]`
 
 For example:
@@ -58,7 +58,7 @@ For example:
 The figures will be saved in `/data` folder.
 
 
-####Regenerate synthetic data:
+#### Regenerate synthetic data:
 **There is no need to run this script if you want to use the same synthetic data as mentioned in the paper**, but, if you wish to generate synthetic datasets with new settings you can modify the `generate_synthetic.py` script and then run:
 
 `python generate_synthetic.py [name of the synthetic datasets]`
