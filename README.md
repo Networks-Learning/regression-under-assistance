@@ -37,7 +37,7 @@ This code depends on the following packages:
 #### Run the algorithms:
 `python train.py [name of datasets that you wish to train]`
 
-for example: `python train.py messidor sigmoid Ugauss`
+For example: `python train.py messidor sigmoid Ugauss`
 
 Available datasets : `['messidor', 'stare5', 'stare11', 'hatespeech','Umessidor', 'Ustare5', 'Ustare11' ,'sigmoid', 'Usigmoid', 'Wsigmoid', 'gauss', 'Ugauss', 'Wgauss']`
 
