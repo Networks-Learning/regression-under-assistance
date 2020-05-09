@@ -98,7 +98,7 @@ class eval_triage:
         list_of_K = [0.2, 0.4, 0.6, 0.8]
         for std in list_of_std:
             for K in list_of_K:
-                for lamb, ind in zip(list_of_lamb, range(len(list_of_lamb))):
+                for lamb in self.list_of_lamb:
                     if str(std) not in res:
                         res[str(std)] = {}
                     if str(K) not in res[str(std)]:
