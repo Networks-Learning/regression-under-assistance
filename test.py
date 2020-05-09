@@ -142,7 +142,7 @@ class plot_triage_real:
 
         for idx, std in enumerate(self.list_of_std):
             for lamb in self.list_of_lamb:
-                for option, ind in zip(self.list_of_option, range(len(self.list_of_option))):
+                for option in self.list_of_option:
                     err_K_tr = []
                     err_K_te = []
 
@@ -188,7 +188,7 @@ class plot_triage_real:
         plt.figtext(0.115, 0.96, multtext, fontsize=17)
 
         for lamb in self.list_of_lamb:
-            for option, ind in zip(self.list_of_option, range(len(self.list_of_option))):
+            for option in self.list_of_option:
                 for idx, test_method in enumerate(self.list_of_test_option):
                     label_map = {'MLP': 'Multilayer perceptron', 'LR': 'Logistic regression', 'NN': 'NN neighbor'}
                     err_K_tr = []
@@ -324,7 +324,7 @@ class plot_triage_real:
         human_dist = float('inf')
         machine_dist = float('inf')
 
-        for d, tr_ind in zip(dist, range(n_tr)):
+        for tr_ind, d in enumerate(dist):
             if tr_ind in tr_human_ind:
                 if d < human_dist:
                     human_dist = d
@@ -473,9 +473,9 @@ class plot_triage_real:
         data = load_data(data_file)
         res = load_data(res_file)
 
-        for std, i0 in zip(self.list_of_std, range(len(self.list_of_std))):
-            for K, i1 in zip(self.list_of_K, range(len(self.list_of_K))):
-                for lamb, i2 in zip(self.list_of_lamb, range(len(self.list_of_lamb))):
+        for std in self.list_of_std:
+            for K in self.list_of_K:
+                for lamb in self.list_of_lamb:
                     if option in res[str(std)][str(K)][str(lamb)]:
                         res_obj = res[str(std)][str(K)][str(lamb)][option]
                         train_res = self.get_train_error(res_obj, data['X'], data['Y'], y_h=None, c=data['c'][str(std)])
