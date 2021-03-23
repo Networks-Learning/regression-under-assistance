@@ -2,9 +2,9 @@
 
 This is a repository containing code and data for the paper:
 
-> A. De, P. Koley, N. Ganguly and M. Gomez-Rodriguez. _Regression Under Human Assistance._ AAAI Conference on Artificial Intelligence , February, 2020. 
+> A. De, N. Okati, P. Koley, N. Ganguly and M. Gomez-Rodriguez. _Regression Under Human Assistance._ AAAI Conference on Artificial Intelligence , February, 2020. 
 
-The paper is available [from AAAI website](https://aaai.org/Papers/AAAI/2020GB/AAAI-DeA.6571.pdf).
+The paper is available [here] (https://arxiv.org/pdf/1909.02963.pdf).
 
 
 ## Pre-requisites
